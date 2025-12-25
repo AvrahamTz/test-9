@@ -1,4 +1,4 @@
-import { loadFromFile, saveToFile } from "../service/userSide"
+import { loadFromFile, saveToFile } from "../service/userSide.js"
 
 export const  createEvent = async (req, res) => {
     try {
