@@ -25,7 +25,7 @@ export const  buyTickets= async (req, res) => {
     }}
 export const  UserPurchaseSummary =async(req,res)=>{
     const recipts = await loadFromFile("../data/receipts.json")
-    const byUser = recipts.filter((recipt)=>recipt.username === req.params)
+    const byUser = await recipts.filter((recipt)=>recipt.username === req.params)
     if(byUser){
         let sum = 0
         let arrOfEvents = []
