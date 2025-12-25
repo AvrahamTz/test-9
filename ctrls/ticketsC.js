@@ -1,4 +1,4 @@
-import { saveToFile } from "../service/userSide"
+import { saveToFile } from "../service/userSide.js"
 
 export const  buyTickets= async (req, res) => {
     const events =await loadFromFile("../data/events.json")
